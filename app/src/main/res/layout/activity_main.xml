@@ -15,21 +15,37 @@
         android:hint="@string/input_hint"
         android:textSize="22sp" />
 
-    <TextView
-        android:id="@+id/url_display"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="22sp" />
+        android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/search_results_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+        </ScrollView>
+
         <TextView
-            android:id="@+id/search_results_view"
-            android:layout_width="wrap_content"
+            android:id="@+id/error_message_display"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp" />
-    </ScrollView>
+            android:padding="16dp"
+            android:text="@string/error_message"
+            android:textSize="22sp"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+    </FrameLayout>
 
 </LinearLayout>

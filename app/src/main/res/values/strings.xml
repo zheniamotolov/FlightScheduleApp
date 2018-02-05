@@ -3,4 +3,5 @@
     <string name="random_text">kek/lol</string>
     <string name="input_hint">type name of airalane company </string>
     <string name="search">Search</string>
+    <string name="error_message">Fail to get resourcse, please try again</string>
 </resources>

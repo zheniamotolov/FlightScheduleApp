@@ -1,18 +1,3 @@
-/*
- * Copyright (C) 2016 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.demo.coursework3.utilities;
 
 import android.net.Uri;
@@ -25,11 +10,11 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class NetworkUtils {
-    final static String APP_ID = "e9d75068&appKey";
+    final static String APP_ID = "e9d75068";
     final static String APP_KEY = "e2ee1c87e66c2107768a30d2dfc9c3eb";
     final static String PARAM_APP_ID="appId";
     final static String PARAM_APP_KEY = "appKey";
-    //https://api.flightstats.com/flex/airports/rest/v1/json/all?appId=e9d75068&appKey=e2ee1c87e66c2107768a30d2dfc9c3eb
+    //https://api.flightstats.com/flex/airports/rest/v1/json/all?appI   d=e9d75068&appKey=e2ee1c87e66c2107768a30d2dfc9c3eb
     final static String ALL_AIRPORTS_SEARCH_URL =
             "https://api.flightstats.com/flex/airports/rest/v1/json/all";
 
@@ -43,7 +28,8 @@ public class NetworkUtils {
 //    final static String sortBy = "stars";
 
     public static URL buildUrl(String githubSearchQuery) {
-        Uri builtUri = Uri.parse(ALL_AIRPORTS_SEARCH_URL).buildUpon()
+        Uri builtUri = Uri.parse(ALL_AIRPORTS_SEARCH_URL)
+                .buildUpon()
                 .appendQueryParameter(PARAM_APP_ID,APP_ID)
                 .appendQueryParameter(PARAM_APP_KEY,APP_KEY)
                 .build();
