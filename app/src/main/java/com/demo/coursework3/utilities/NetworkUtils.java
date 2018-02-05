@@ -1,5 +1,4 @@
 package com.demo.coursework3.utilities;
-
 import android.net.Uri;
 
 import java.io.IOException;
