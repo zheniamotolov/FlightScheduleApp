@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +15,10 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.demo.coursework3.utilities.JSONUtils;
 import com.demo.coursework3.utilities.NetworkUtils;
+
+import org.json.JSONException;
 
 import java.io.IOException;
 import java.net.URL;
@@ -37,21 +41,36 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int menuItemThatWasSelected = item.getItemId();
+        if (menuItemThatWasSelected == R.id.action_search) {
+//            Toast.makeText(MainActivity.this, "search message", Toast.LENGTH_LONG).show();
+            makeflightStatsSearchQuery();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     //Network
     void makeflightStatsSearchQuery() {
-        String flightStatsQuery = searchBoxTextView.getText().toString();
-        URL flightStatsSearchURL = NetworkUtils.buildUrl(flightStatsQuery);
-        String flightStatsSearchResaults = null;
-        new FlightStatsQueryTask().execute(flightStatsSearchURL);
+        //  String flightStatsQuery = searchBoxTextView.getText().toString();
+
+        new FlightStatsQueryTask().execute();
 
     }
 
     //Async task
     public class FlightStatsQueryTask extends AsyncTask<
-            URL,
+            String,
             Void,
-            String> {
+            String[]> {
         @Override
         protected void onPreExecute() {
             loadingIndicatorProgressBar.setVisibility(View.VISIBLE);
@@ -59,23 +78,42 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        protected String doInBackground(URL... urls) {
-            URL serachURL = urls[0];
+        protected String[] doInBackground(String... params) {
+//            if (params.length == 0) {
+//                return null;
+//            }
             String flightStatsSearchResults = null;
+
             try {
-                flightStatsSearchResults = NetworkUtils.getResponseFromHttpUrl(serachURL);
+                flightStatsSearchResults = NetworkUtils.getResponseFromHttpUrl(builURL());
+
+                String[] simpleJsonWeatherData = JSONUtils
+                        .getPreviewWeatherStringFromJson(MainActivity.this, flightStatsSearchResults);
+                return simpleJsonWeatherData;
+            } catch (JSONException e) {
+                Log.e(e.getMessage(), "Problem with parsing json to string");
             } catch (IOException e) {
-                e.printStackTrace();
+                Log.e(e.getMessage(), "Problem with receiving data by url from flightStats");
+
             }
-            return flightStatsSearchResults;
+            return null;
         }
 
-        @Override
-        protected void onPostExecute(String s) {
-            loadingIndicatorProgressBar.setVisibility(View.INVISIBLE);
-            if (s != null && !s.equals("")) {
+        private URL builURL() {
+            return NetworkUtils.buildUrl();
+        }
 
-                searchResaultsTextView.setText(s);
+
+        @Override
+        protected void onPostExecute(String[] airportData) {
+            loadingIndicatorProgressBar.setVisibility(View.INVISIBLE);
+            if (airportData != null) {
+                showJsonDataView();
+
+//                searchResaultsTextView.setText(s);
+                for (String airportString : airportData) {
+                    searchResaultsTextView.append((airportString) + "\n\n\n");
+                }
             } else {
                 showErrorMeassage();
             }
@@ -93,19 +131,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Options in layout menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int menuItemThatWasSelected = item.getItemId();
-        if (menuItemThatWasSelected == R.id.action_search) {
-//            Toast.makeText(MainActivity.this, "search message", Toast.LENGTH_LONG).show();
-            makeflightStatsSearchQuery();
-        }
-        return super.onOptionsItemSelected(item);
-    }
+
 }

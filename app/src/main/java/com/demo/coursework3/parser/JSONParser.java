@@ -1,4 +1,4 @@
-package com.demo.coursework3.utilities;
+package com.demo.coursework3.parser;
 
 import org.json.JSONObject;
 

@@ -1,5 +1,7 @@
 package com.demo.coursework3.utilities;
+
 import android.net.Uri;
+import android.util.Log;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,15 +10,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
-public class NetworkUtils {
-    final static String APP_ID = "e9d75068";
-    final static String APP_KEY = "e2ee1c87e66c2107768a30d2dfc9c3eb";
-    final static String PARAM_APP_ID="appId";
-    final static String PARAM_APP_KEY = "appKey";
-    //https://api.flightstats.com/flex/airports/rest/v1/json/all?appI   d=e9d75068&appKey=e2ee1c87e66c2107768a30d2dfc9c3eb
-    final static String ALL_AIRPORTS_SEARCH_URL =
-            "https://api.flightstats.com/flex/airports/rest/v1/json/all";
+import static com.demo.coursework3.constants.FlightTrackerConstants.*;
 
+public class NetworkUtils {
 //    final static String PARAM_QUERY = "q";
 
 //    /*
@@ -26,18 +22,18 @@ public class NetworkUtils {
 //    final static String PARAM_SORT = "sort";
 //    final static String sortBy = "stars";
 
-    public static URL buildUrl(String githubSearchQuery) {
+    public static URL buildUrl() {
         Uri builtUri = Uri.parse(ALL_AIRPORTS_SEARCH_URL)
                 .buildUpon()
-                .appendQueryParameter(PARAM_APP_ID,APP_ID)
-                .appendQueryParameter(PARAM_APP_KEY,APP_KEY)
+                .appendQueryParameter(PARAM_APP_ID, APP_ID)
+                .appendQueryParameter(PARAM_APP_KEY, APP_KEY)
                 .build();
-
         URL url = null;
+
         try {
             url = new URL(builtUri.toString());
         } catch (MalformedURLException e) {
-            e.printStackTrace();
+            Log.e(e.getMessage(),"exeption in building url");
         }
 
         return url;
@@ -58,6 +54,7 @@ public class NetworkUtils {
                 return null;
             }
         } finally {
+
             urlConnection.disconnect();
         }
     }
