@@ -21,6 +21,7 @@ import com.demo.coursework3.utilities.NetworkUtils;
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //menu
+    //Menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
@@ -60,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
     //Network
     void makeflightStatsSearchQuery() {
-        //  String flightStatsQuery = searchBoxTextView.getText().toString();
-
         new FlightStatsQueryTask().execute();
 
     }
@@ -82,16 +81,16 @@ public class MainActivity extends AppCompatActivity {
 //            if (params.length == 0) {
 //                return null;
 //            }
-            String flightStatsSearchResults = null;
-
             try {
-                flightStatsSearchResults = NetworkUtils.getResponseFromHttpUrl(builURL());
-
+                String flightStatsSearchResults = NetworkUtils.getResponseFromHttpUrl(NetworkUtils.buildUrl());
                 String[] simpleJsonWeatherData = JSONUtils
                         .getPreviewWeatherStringFromJson(MainActivity.this, flightStatsSearchResults);
                 return simpleJsonWeatherData;
+
             } catch (JSONException e) {
                 Log.e(e.getMessage(), "Problem with parsing json to string");
+            } catch (MalformedURLException e) {
+                Log.e(e.getMessage(), "exeption in building url");
             } catch (IOException e) {
                 Log.e(e.getMessage(), "Problem with receiving data by url from flightStats");
 
@@ -99,9 +98,9 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
 
-        private URL builURL() {
-            return NetworkUtils.buildUrl();
-        }
+//        private URL builURL() {
+//            return NetworkUtils.buildUrl();
+//        }
 
 
         @Override
@@ -109,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
             loadingIndicatorProgressBar.setVisibility(View.INVISIBLE);
             if (airportData != null) {
                 showJsonDataView();
-
 //                searchResaultsTextView.setText(s);
                 for (String airportString : airportData) {
                     searchResaultsTextView.append((airportString) + "\n\n\n");
