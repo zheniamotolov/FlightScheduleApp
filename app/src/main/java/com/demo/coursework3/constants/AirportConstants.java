@@ -9,6 +9,6 @@ public class AirportConstants {
     final public static String AIRPORT_FS = "fs";
     final public static String AIRPORT_CITY = "city";
     final public static String AIRPORT_COUNTRY = "countryName";
-    final public static String AIRPORT_WHEATHER_URL = "weatherURL";
+    final public static String AIRPORT_WHEATHER_URL = "weatherUrl";
     final public static String FORMAT_LIST = "list";
 }
