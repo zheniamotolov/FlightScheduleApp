@@ -1,7 +1,5 @@
 package com.demo.coursework3;
 
-import android.content.AsyncQueryHandler;
-import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,18 +9,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.demo.coursework3.utilities.JSONUtils;
+import com.demo.coursework3.parser.JSONParser;
 import com.demo.coursework3.utilities.NetworkUtils;
 
 import org.json.JSONException;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
     private EditText searchBoxTextView;
@@ -33,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.airports_preview_list);
 
         searchBoxTextView = (EditText) findViewById(R.id.search_box);
         searchResaultsTextView = (TextView) findViewById(R.id.search_results_view);
@@ -83,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
             try {
                 String flightStatsSearchResults = NetworkUtils.getResponseFromHttpUrl(NetworkUtils.buildUrl());
-                String[] simpleJsonWeatherData = JSONUtils
+                String[] simpleJsonWeatherData = JSONParser
                         .getPreviewWeatherStringFromJson(MainActivity.this, flightStatsSearchResults);
                 return simpleJsonWeatherData;
 

@@ -10,7 +10,7 @@ public class AirportPreviewInfoModel {
     private String city;
     private String country;
     private String wheatherURL;
-//change this
+
     public AirportPreviewInfoModel() {
 
     }
