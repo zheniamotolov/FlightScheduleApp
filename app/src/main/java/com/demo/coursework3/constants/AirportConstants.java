@@ -11,4 +11,5 @@ public class AirportConstants {
     final public static String AIRPORT_COUNTRY = "countryName";
     final public static String AIRPORT_WHEATHER_URL = "weatherUrl";
     final public static String FORMAT_LIST = "list";
+
 }
