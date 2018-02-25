@@ -3,7 +3,7 @@ package com.demo.coursework3.parser;
 import android.content.Context;
 import android.util.Log;
 
-import com.demo.coursework3.model.AirportPreviewInfoModel;
+import com.demo.coursework3.model.AirportListItemModel;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -40,11 +40,11 @@ public class JSONParser {
                     "-" + airport.getString(AIRPORT_WHEATHER_URL);
         }
         Gson gson = new Gson();
-        AirportPreviewInfoModel[] airportPreviewInfoModelArray = gson.fromJson(
+        AirportListItemModel[] airportListItemModelArray = gson.fromJson(
                 airportDataJsonStr,
-                AirportPreviewInfoModel[].class
+                AirportListItemModel[].class
         );
-        for (AirportPreviewInfoModel item : airportPreviewInfoModelArray) {
+        for (AirportListItemModel item : airportListItemModelArray) {
             Log.i("Contact Details",
                     item.getName() +
                             "-" + item.getFs() +

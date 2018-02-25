@@ -1,26 +1,14 @@
 package com.demo.coursework3.utilities;
 
-import android.content.Context;
 import android.util.Log;
 
-import com.demo.coursework3.model.AirportPreviewInfoModel;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
-
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.HttpURLConnection;
 
 
-import static com.demo.coursework3.constants.AirportConstants.AIRPORT_CITY;
-import static com.demo.coursework3.constants.AirportConstants.AIRPORT_COUNTRY;
-import static com.demo.coursework3.constants.AirportConstants.AIRPORT_FS;
-import static com.demo.coursework3.constants.AirportConstants.AIRPORT_NAME;
-import static com.demo.coursework3.constants.AirportConstants.AIRPORT_WHEATHER_URL;
-import static com.demo.coursework3.constants.AirportConstants.FORMAT_LIST;
 import static com.demo.coursework3.constants.FlightTrackerConstants.STATUS_MESSAGE_CODE;
 
 /**

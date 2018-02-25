@@ -4,18 +4,18 @@ package com.demo.coursework3.model;
  * Created by eugene on 2/11/18.
  */
 
-public class AirportPreviewInfoModel {
+public class AirportListItemModel {
     private String name;
     private String fs;
     private String city;
     private String country;
     private String wheatherURL;
 
-    public AirportPreviewInfoModel() {
+    public AirportListItemModel() {
 
     }
 
-    public AirportPreviewInfoModel(String name, String fs, String city, String country, String wheatherURL) {
+    public AirportListItemModel(String name, String fs, String city, String country, String wheatherURL) {
         this.name = name;
         this.fs = fs;
         this.city = city;

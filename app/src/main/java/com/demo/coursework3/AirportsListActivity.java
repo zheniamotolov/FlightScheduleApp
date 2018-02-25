@@ -19,7 +19,7 @@ import org.json.JSONException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-public class MainActivity extends AppCompatActivity {
+public class AirportsListActivity extends AppCompatActivity {
     private EditText searchBoxTextView;
     private TextView searchResaultsTextView;
     private TextView errorMessageTextView;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.airports_preview_list);
+        setContentView(R.layout.airports_list);
 
         searchBoxTextView = (EditText) findViewById(R.id.search_box);
         searchResaultsTextView = (TextView) findViewById(R.id.search_results_view);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int menuItemThatWasSelected = item.getItemId();
         if (menuItemThatWasSelected == R.id.action_search) {
-//            Toast.makeText(MainActivity.this, "search message", Toast.LENGTH_LONG).show();
+//            Toast.makeText(AirportsListActivity.this, "search message", Toast.LENGTH_LONG).show();
             makeflightStatsSearchQuery();
         }
         return super.onOptionsItemSelected(item);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 String flightStatsSearchResults = NetworkUtils.getResponseFromHttpUrl(NetworkUtils.buildUrl());
                 String[] simpleJsonWeatherData = JSONParser
-                        .getPreviewWeatherStringFromJson(MainActivity.this, flightStatsSearchResults);
+                        .getPreviewWeatherStringFromJson(AirportsListActivity.this, flightStatsSearchResults);
                 return simpleJsonWeatherData;
 
             } catch (JSONException e) {
