@@ -19,22 +19,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!--<ScrollView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content">-->
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/search_results_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </android.support.v7.widget.RecyclerView>
-            <!--<TextView-->
-            <!--android:id="@+id/search_results_view"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textSize="18sp" />-->
-        <!--</ScrollView>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/airportsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
 
         <TextView
             android:id="@+id/error_message_display"
@@ -42,9 +31,9 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/error_message"
+            android:textColor="@android:color/holo_red_dark"
             android:textSize="22sp"
-            android:visibility="invisible"
-            android:textColor="@android:color/holo_red_dark"/>
+            android:visibility="invisible" />
 
         <ProgressBar
             android:id="@+id/loading_indicator"
