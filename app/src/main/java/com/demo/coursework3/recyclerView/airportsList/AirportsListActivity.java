@@ -1,4 +1,4 @@
-package com.demo.coursework3;
+package com.demo.coursework3.recyclerView.airportsList;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -15,6 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.demo.coursework3.R;
 import com.demo.coursework3.parser.JSONParser;
 import com.demo.coursework3.utilities.NetworkUtils;
 
@@ -23,16 +24,13 @@ import org.json.JSONException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-public class AirportsListActivity extends AppCompatActivity implements AirportsListAdapter.AirportListAdapterOnClickHandler {
+public class AirportsListActivity extends AppCompatActivity implements OnClickHandler {
     private EditText searchBoxTextView;
-    private TextView searchResaultsTextView;
     private TextView errorMessageTextView;
     private ProgressBar loadingIndicatorProgressBar;
     private RecyclerView airportListRecyclerView;
 
-//    private RecyclerView.Adapter recycleAdapter;
-//    private LinearLayoutManager layoutManager;
-private AirportsListAdapter airportsListAdapter;
+    private AirportsListAdapter airportsListAdapter;
     private LinearLayoutManager layoutManager;
 
     @Override
@@ -41,12 +39,14 @@ private AirportsListAdapter airportsListAdapter;
         setContentView(R.layout.airports_list);
 
         searchBoxTextView = (EditText) findViewById(R.id.search_box);
-//        searchResaultsTextView = (TextView) findViewById(R.id.search_results_view);
         errorMessageTextView = (TextView) findViewById(R.id.error_message_display);
         loadingIndicatorProgressBar = (ProgressBar) findViewById(R.id.loading_indicator);
 
         airportListRecyclerView = (RecyclerView) findViewById(R.id.airportsList);
         airportListRecyclerView.setHasFixedSize(true);
+        airportListRecyclerView.setItemViewCacheSize(20);
+        airportListRecyclerView.setDrawingCacheEnabled(true);
+        airportListRecyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         airportListRecyclerView.setLayoutManager(layoutManager);
         airportsListAdapter = new AirportsListAdapter(this);
@@ -72,7 +72,6 @@ private AirportsListAdapter airportsListAdapter;
     public boolean onOptionsItemSelected(MenuItem item) {
         int menuItemThatWasSelected = item.getItemId();
         if (menuItemThatWasSelected == R.id.action_search) {
-//            Toast.makeText(AirportsListActivity.this, "search message", Toast.LENGTH_LONG).show();
             airportsListAdapter.setAirpotsListData(null);
             makeflightStatsSearchQuery();
         }
@@ -141,12 +140,12 @@ private AirportsListAdapter airportsListAdapter;
 
     private void showJsonDataView() {
         errorMessageTextView.setVisibility(View.INVISIBLE);
-        searchResaultsTextView.setVisibility(View.VISIBLE);
+        airportListRecyclerView.setVisibility(View.VISIBLE);
     }
 
     private void showErrorMeassage() {
         errorMessageTextView.setVisibility(View.VISIBLE);
-        searchResaultsTextView.setVisibility(View.INVISIBLE);
+        airportListRecyclerView.setVisibility(View.INVISIBLE);
     }
 
     //Options in layout menu

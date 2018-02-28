@@ -10,6 +10,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.List;
+
 import static com.demo.coursework3.constants.AirportConstants.AIRPORT_CITY;
 import static com.demo.coursework3.constants.AirportConstants.AIRPORT_COUNTRY;
 import static com.demo.coursework3.constants.AirportConstants.AIRPORT_FS;
@@ -31,28 +33,32 @@ public class JSONParser {
 ////        if (airportsJson.has(STATUS_MESSAGE_CODE)) {
 ////            checkStatus(airportsJson);
 ////        }
+
+
+
         for (int i = 0; i < airportsArray.length(); i++) {
             JSONObject airport = airportsArray.getJSONObject(i);
             parsedAirportData[i] = airport.getString(AIRPORT_NAME) +//todo replace to normal parcing
-                    "-" + airport.getString(AIRPORT_FS) +
-                    "-" + airport.getString(AIRPORT_CITY) +
-                    "-" + airport.getString(AIRPORT_COUNTRY) +
-                    "-" + airport.getString(AIRPORT_WHEATHER_URL);
+                    "\n" + airport.getString(AIRPORT_FS) +
+                    "\n" + airport.getString(AIRPORT_CITY) +
+                    "\n" + airport.getString(AIRPORT_COUNTRY);
         }
-        Gson gson = new Gson();
-        AirportListItemModel[] airportListItemModelArray = gson.fromJson(
-                airportDataJsonStr,
-                AirportListItemModel[].class
-        );
-        for (AirportListItemModel item : airportListItemModelArray) {
-            Log.i("Contact Details",
-                    item.getName() +
-                            "-" + item.getFs() +
-                            "-" + item.getCity() +
-                            "-" + item.getCountry() +
-                            "-" + item.getWheatherURL());
-
-        }
+//        Gson gson = new Gson();
+//        AirportListItemModel[] airportListItemModelArray = gson.fromJson(
+//                String.valueOf(airportsArray),
+//                AirportListItemModel[].class
+//        );
+//
+//        List<AirportListItemModel>
+//        for (AirportListItemModel item : airportListItemModelArray) {
+//            Log.i("Contact Details",
+//                    item.getName() +
+//                            "-" + item.getFs() +
+//                            "-" + item.getCity() +
+//                            "-" + item.getCountry() +
+//                            "-" + item.getWheatherURL());
+//
+//        }
         return parsedAirportData;
     }
 }
