@@ -9,6 +9,7 @@ import android.view.View.OnClickListener;
 
 
 import com.demo.coursework.R;
+import com.demo.coursework.model.AirportListItemModel;
 
 /**
  * Created by eugene on 2/24/18.
@@ -17,7 +18,7 @@ import com.demo.coursework.R;
 public class AirportsListAdapter extends RecyclerView.Adapter<AirportsListAdapter.AirportsListViewHolder> {
 
     private OnClickHandler clickHandler;
-    private String[] airportsListData;
+    private  AirportListItemModel[] airportsListData;
 
     public AirportsListAdapter(OnClickHandler clickHandler) {
         this.clickHandler = clickHandler;
@@ -33,8 +34,8 @@ public class AirportsListAdapter extends RecyclerView.Adapter<AirportsListAdapte
 
     @Override
     public void onBindViewHolder(AirportsListAdapter.AirportsListViewHolder holder, int position) {
-        String airportsListItemData = airportsListData[position];
-        holder.airportListItemView.setText(airportsListItemData);
+        AirportListItemModel airportsListItemData = airportsListData[position];
+        holder.airportListItemView.setText(airportsListItemData.toString());
     }
 
     @Override
@@ -43,7 +44,7 @@ public class AirportsListAdapter extends RecyclerView.Adapter<AirportsListAdapte
         return airportsListData.length;
     }
 
-    public void setAirpotsListData(String[] airpotsListData) {
+    public void setAirpotsListData( AirportListItemModel[] airpotsListData) {
         this.airportsListData = airpotsListData;
         notifyDataSetChanged();
     }
@@ -60,7 +61,7 @@ public class AirportsListAdapter extends RecyclerView.Adapter<AirportsListAdapte
         @Override
         public void onClick(View v) {
             int adapterPosition = getAdapterPosition();
-            String airportsListItemData = airportsListData[adapterPosition];
+            AirportListItemModel airportsListItemData = airportsListData[adapterPosition];
             clickHandler.onClick(airportsListItemData);
         }
     }

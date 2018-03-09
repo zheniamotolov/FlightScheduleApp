@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.demo.coursework.R;
+import com.demo.coursework.model.AirportListItemModel;
 import com.demo.coursework.parser.JSONParser;
 import com.demo.coursework.utilities.NetworkUtils;
 
@@ -54,11 +55,11 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
     }
 
     @Override
-    public void onClick(String airportsListItemData) {
+    public void onClick(AirportListItemModel airportsListItemData) {
         if (mToast != null) {
             mToast.cancel();
         }
-        mToast = Toast.makeText(this, airportsListItemData, Toast.LENGTH_SHORT);
+        mToast = Toast.makeText(this, airportsListItemData.toString(), Toast.LENGTH_SHORT);
         mToast.show();
 
     }
@@ -90,7 +91,8 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
     public class FlightStatsQueryTask extends AsyncTask<
             String,
             Void,
-            String[]> {
+            AirportListItemModel[]> {
+
         @Override
         protected void onPreExecute() {
             loadingIndicatorProgressBar.setVisibility(View.VISIBLE);
@@ -98,13 +100,13 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
         }
 
         @Override
-        protected String[] doInBackground(String... params) {
+        protected  AirportListItemModel[] doInBackground(String... params) {
 //            if (params.length == 0) {
 //                return null;
 //            }
             try {
                 String flightStatsSearchResults = NetworkUtils.getResponseFromHttpUrl(NetworkUtils.buildUrl());
-                String[] simpleJsonWeatherData = JSONParser
+                AirportListItemModel[] simpleJsonWeatherData = JSONParser
                         .getPreviewWeatherStringFromJson(AirportsListActivity.this, flightStatsSearchResults);
                 return simpleJsonWeatherData;
 
@@ -124,12 +126,10 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
 //        }
 
 
-        @Override
-        protected void onPostExecute(String[] airportsData) {
+        protected void onPostExecute( AirportListItemModel[] airportsData) {
             loadingIndicatorProgressBar.setVisibility(View.INVISIBLE);
             if (airportsData != null) {
                 showJsonDataView();
-//                searchResaultsTextView.setText(s);
                 airportsListAdapter.setAirpotsListData(airportsData);
 //                for (String airportString : airportsData) {
 //                    searchResaultsTextView.append((airportString) + "\n\n\n");
