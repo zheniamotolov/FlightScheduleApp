@@ -1,7 +1,6 @@
-package com.demo.coursework3.utilities;
+package com.demo.coursework.utilities;
 
 import android.net.Uri;
-import android.util.Log;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,7 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
-import static com.demo.coursework3.constants.FlightTrackerConstants.*;
+import static com.demo.coursework.constants.FlightTrackerConstants.*;
 
 public class NetworkUtils {
     public static URL buildUrl() throws MalformedURLException {

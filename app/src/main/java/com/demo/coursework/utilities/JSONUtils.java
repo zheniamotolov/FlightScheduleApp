@@ -1,4 +1,4 @@
-package com.demo.coursework3.utilities;
+package com.demo.coursework.utilities;
 
 import android.util.Log;
 
@@ -9,7 +9,7 @@ import org.json.JSONObject;
 import java.net.HttpURLConnection;
 
 
-import static com.demo.coursework3.constants.FlightTrackerConstants.STATUS_MESSAGE_CODE;
+import static com.demo.coursework.constants.FlightTrackerConstants.STATUS_MESSAGE_CODE;
 
 /**
  * Created by eugene on 2/10/18.

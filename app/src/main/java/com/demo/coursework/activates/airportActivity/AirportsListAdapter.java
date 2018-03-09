@@ -1,4 +1,4 @@
-package com.demo.coursework3.recyclerView.airportsList;
+package com.demo.coursework.activates.airportActivity;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 import android.view.View.OnClickListener;
 
 
-import com.demo.coursework3.R;
+import com.demo.coursework.R;
 
 /**
  * Created by eugene on 2/24/18.
@@ -18,12 +18,6 @@ public class AirportsListAdapter extends RecyclerView.Adapter<AirportsListAdapte
 
     private OnClickHandler clickHandler;
     private String[] airportsListData;
-
-
-
-//    public interface OnClickHandler {
-//        void onClick(String airportsListItemData);
-//    }
 
     public AirportsListAdapter(OnClickHandler clickHandler) {
         this.clickHandler = clickHandler;
@@ -38,7 +32,7 @@ public class AirportsListAdapter extends RecyclerView.Adapter<AirportsListAdapte
     }
 
     @Override
-    public void onBindViewHolder( AirportsListAdapter.AirportsListViewHolder holder, int position) {
+    public void onBindViewHolder(AirportsListAdapter.AirportsListViewHolder holder, int position) {
         String airportsListItemData = airportsListData[position];
         holder.airportListItemView.setText(airportsListItemData);
     }

@@ -1,4 +1,4 @@
-package com.demo.coursework3.constants;
+package com.demo.coursework.constants;
 
 /**
  * Created by eugene on 2/11/18.

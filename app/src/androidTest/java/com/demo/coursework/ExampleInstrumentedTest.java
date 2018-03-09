@@ -1,4 +1,4 @@
-package com.demo.coursework3;
+package com.demo.coursework;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

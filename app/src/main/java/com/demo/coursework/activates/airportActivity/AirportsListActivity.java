@@ -1,6 +1,5 @@
-package com.demo.coursework3.recyclerView.airportsList;
+package com.demo.coursework.activates.airportActivity;
 
-import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,9 +14,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.demo.coursework3.R;
-import com.demo.coursework3.parser.JSONParser;
-import com.demo.coursework3.utilities.NetworkUtils;
+import com.demo.coursework.R;
+import com.demo.coursework.parser.JSONParser;
+import com.demo.coursework.utilities.NetworkUtils;
 
 import org.json.JSONException;
 
@@ -29,7 +28,7 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
     private TextView errorMessageTextView;
     private ProgressBar loadingIndicatorProgressBar;
     private RecyclerView airportListRecyclerView;
-
+    private Toast mToast;
     private AirportsListAdapter airportsListAdapter;
     private LinearLayoutManager layoutManager;
 
@@ -56,9 +55,12 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
 
     @Override
     public void onClick(String airportsListItemData) {
-        Context context = this;
-        Toast.makeText(context, airportsListItemData, Toast.LENGTH_SHORT)
-                .show();
+        if (mToast != null) {
+            mToast.cancel();
+        }
+        mToast = Toast.makeText(this, airportsListItemData, Toast.LENGTH_SHORT);
+        mToast.show();
+
     }
 
     //Menu
@@ -109,7 +111,7 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
             } catch (JSONException e) {
                 Log.e(e.getMessage(), "Problem with parsing json to string");
             } catch (MalformedURLException e) {
-                Log.e(e.getMessage(), "exeption in building url");
+                Log.e(e.getMessage(), "exception in building url");
             } catch (IOException e) {
                 Log.e(e.getMessage(), "Problem with receiving data by url from flightStats");
 
