@@ -23,9 +23,7 @@ import static com.demo.coursework.constants.AirportConstants.AIRPORT_NAME;
 
 public class JSONParser {
     public static AirportListItemModel[] getPreviewWeatherStringFromJson(Context context, String airportDataJsonStr) throws JSONException {
-
         JSONObject airportDataJson = new JSONObject(airportDataJsonStr);
-
         JSONArray airportsArray = airportDataJson.getJSONArray("airports");
         String[] parsedAirportData = new String[airportsArray.length()];
 //

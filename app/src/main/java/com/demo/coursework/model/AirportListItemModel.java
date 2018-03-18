@@ -42,6 +42,40 @@ public class AirportListItemModel {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        AirportListItemModel that = (AirportListItemModel) o;
+
+        if (countryName != null ? !countryName.equals(that.countryName) : that.countryName != null)
+            return false;
+        if (fs != null ? !fs.equals(that.fs) : that.fs != null) return false;
+        if (city != null ? !city.equals(that.city) : that.city != null) return false;
+        if (country != null ? !country.equals(that.country) : that.country != null) return false;
+        if (weatherUrl != null ? !weatherUrl.equals(that.weatherUrl) : that.weatherUrl != null)
+            return false;
+        if (longitude != null ? !longitude.equals(that.longitude) : that.longitude != null)
+            return false;
+        if (latitude != null ? !latitude.equals(that.latitude) : that.latitude != null)
+            return false;
+        return name != null ? name.equals(that.name) : that.name == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = countryName != null ? countryName.hashCode() : 0;
+        result = 31 * result + (fs != null ? fs.hashCode() : 0);
+        result = 31 * result + (city != null ? city.hashCode() : 0);
+        result = 31 * result + (country != null ? country.hashCode() : 0);
+        result = 31 * result + (weatherUrl != null ? weatherUrl.hashCode() : 0);
+        result = 31 * result + (longitude != null ? longitude.hashCode() : 0);
+        result = 31 * result + (latitude != null ? latitude.hashCode() : 0);
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        return result;
+    }
+
     public String getName() {
         return name;
     }
