@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.demo.coursework.R;
 
-public class FullAirportIfnoActivity extends AppCompatActivity {
+public class FullAirportInfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

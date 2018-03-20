@@ -4,6 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.demo.coursework.activates.fullAirportInfoActivity.FullAirportIfnoActivity">
+    android:paddingBottom="@dimen/text_margin"
+    android:paddingLeft="@dimen/text_margin"
+    android:paddingRight="@dimen/text_margin"
+    android:paddingTop="@dimen/text_margin"
+    tools:context="com.demo.coursework.activates.fullAirportInfoActivity.FullAirportInfoActivity">
+
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is default text. Hopefully it changes."
+        android:textSize="30sp"/>
 
 </android.support.constraint.ConstraintLayout>
