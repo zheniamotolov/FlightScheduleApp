@@ -63,6 +63,7 @@ public class AirportsListAdapter extends RecyclerView.Adapter<AirportsListAdapte
             int adapterPosition = getAdapterPosition();
             AirportListItemModel airportsListItemData = airportsListData[adapterPosition];
             clickHandler.onClick(airportsListItemData);
+
         }
     }
 }

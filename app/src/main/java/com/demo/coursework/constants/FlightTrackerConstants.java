@@ -5,8 +5,8 @@ package com.demo.coursework.constants;
  */
 
 public  class FlightTrackerConstants {
-    final public static String APP_ID = "2d1137d5";
-    final public static String APP_KEY = "cf249e721c6ead9f60d9d0e75846ecb7";
+    final public static String APP_ID = "a4405c02";
+    final public static String APP_KEY = "8326aad634b5c65b64c48d8d1dbdadcb";
     final public static String PARAM_APP_ID = "appId";
     final public static String PARAM_APP_KEY = "appKey";
     final public static String ALL_AIRPORTS_SEARCH_URL = "https://api.flightstats.com/flex/airports/rest/v1/json/all";

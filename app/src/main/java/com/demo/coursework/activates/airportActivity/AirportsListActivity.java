@@ -1,5 +1,6 @@
 package com.demo.coursework.activates.airportActivity;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.demo.coursework.R;
+import com.demo.coursework.activates.fullAirportInfoActivity.FullAirportInfoActivity;
 import com.demo.coursework.model.AirportListItemModel;
 import com.demo.coursework.parser.JSONParser;
 import com.demo.coursework.utilities.NetworkUtils;
@@ -22,6 +24,7 @@ import com.demo.coursework.utilities.NetworkUtils;
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.MalformedURLException;
 
 public class AirportsListActivity extends AppCompatActivity implements OnClickHandler {
@@ -56,11 +59,14 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
 
     @Override
     public void onClick(AirportListItemModel airportsListItemData) {
-        if (mToast != null) {
-            mToast.cancel();
-        }
-        mToast = Toast.makeText(this, airportsListItemData.toString(), Toast.LENGTH_SHORT);
-        mToast.show();
+//        if (mToast != null) {
+//            mToast.cancel();
+//        }
+//        mToast = Toast.makeText(this, airportsListItemData.toString(), Toast.LENGTH_SHORT);
+//        mToast.show();
+        Intent intent = new Intent(AirportsListActivity.this, FullAirportInfoActivity.class);
+        intent.putExtra(Intent.EXTRA_TEXT,airportsListItemData.toString());//(Parceble)
+        startActivity(intent);
 
     }
 
@@ -75,7 +81,7 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
     public boolean onOptionsItemSelected(MenuItem item) {
         int menuItemThatWasSelected = item.getItemId();
         if (menuItemThatWasSelected == R.id.action_search) {
-            airportsListAdapter.setAirpotsListData(null);
+            airportsListAdapter.setAirpotsListData(null);//reset data ?
             makeflightStatsSearchQuery();
         }
         return super.onOptionsItemSelected(item);
@@ -100,7 +106,7 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
         }
 
         @Override
-        protected  AirportListItemModel[] doInBackground(String... params) {
+        protected AirportListItemModel[] doInBackground(String... params) {
 //            if (params.length == 0) {
 //                return null;
 //            }
@@ -126,7 +132,7 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
 //        }
 
 
-        protected void onPostExecute( AirportListItemModel[] airportsData) {
+        protected void onPostExecute(AirportListItemModel[] airportsData) {
             loadingIndicatorProgressBar.setVisibility(View.INVISIBLE);
             if (airportsData != null) {
                 showJsonDataView();
