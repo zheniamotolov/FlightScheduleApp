@@ -12,10 +12,6 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-import static com.demo.coursework.constants.AirportConstants.AIRPORT_CITY;
-import static com.demo.coursework.constants.AirportConstants.AIRPORT_COUNTRY;
-import static com.demo.coursework.constants.AirportConstants.AIRPORT_FS;
-import static com.demo.coursework.constants.AirportConstants.AIRPORT_NAME;
 
 /**
  * Created by eugene on 2/4/18.

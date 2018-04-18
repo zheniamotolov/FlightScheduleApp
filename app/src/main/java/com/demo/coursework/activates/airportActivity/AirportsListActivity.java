@@ -126,12 +126,6 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
             }
             return null;
         }
-
-//        private URL builURL() {
-//            return NetworkUtils.buildUrl();
-//        }
-
-
         protected void onPostExecute(AirportListItemModel[] airportsData) {
             loadingIndicatorProgressBar.setVisibility(View.INVISIBLE);
             if (airportsData != null) {
