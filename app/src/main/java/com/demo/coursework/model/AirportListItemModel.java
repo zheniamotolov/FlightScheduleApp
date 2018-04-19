@@ -23,12 +23,10 @@ public class AirportListItemModel {
 
     @Override
     public String toString() {
-        return "AirportListItemModel{" +
-                "countryName='" + countryName + '\'' +
-                ", fs='" + fs + '\'' +
+        return "fs='" + fs + '\'' +
+                ", countryName='" + countryName + '\'' +
                 ", city='" + city + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+                ", name='" + name + '\'';
     }
 
     @Override
