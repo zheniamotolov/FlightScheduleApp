@@ -1,4 +1,4 @@
-package com.demo.coursework.db;
+package com.demo.coursework.db.model;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -8,15 +8,16 @@ import android.arch.persistence.room.PrimaryKey;
 public class Airport {
 
     @PrimaryKey
+    @ColumnInfo(name = "fs")
     private String fs;
 
-    @ColumnInfo(name = "airport")
+    @ColumnInfo(name = "airportName")
     private String airportName;
 
-    @ColumnInfo(name = "country")
+    @ColumnInfo(name = "countryName")
     private String countryName;
 
-    @ColumnInfo(name = "city")
+    @ColumnInfo(name = "cityName")
     private String cityName;
 
     public String getFs() {

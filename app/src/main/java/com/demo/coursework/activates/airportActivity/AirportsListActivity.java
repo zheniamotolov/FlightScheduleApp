@@ -82,13 +82,13 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
         int menuItemThatWasSelected = item.getItemId();
         if (menuItemThatWasSelected == R.id.action_search) {
             airportsListAdapter.setAirpotsListData(null);//reset data ?
-            makeflightStatsSearchQuery();
+            makeFlightStatsSearchQuery();
         }
         return super.onOptionsItemSelected(item);
     }
 
     //Network
-    void makeflightStatsSearchQuery() {
+    void makeFlightStatsSearchQuery() {
         new FlightStatsQueryTask().execute();
 
     }
@@ -149,8 +149,4 @@ public class AirportsListActivity extends AppCompatActivity implements OnClickHa
         errorMessageTextView.setVisibility(View.VISIBLE);
         airportListRecyclerView.setVisibility(View.INVISIBLE);
     }
-
-    //Options in layout menu
-
-
 }
