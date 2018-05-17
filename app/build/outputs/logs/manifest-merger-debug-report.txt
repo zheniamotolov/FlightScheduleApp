@@ -1,0 +1,181 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/timber-4.7.0.aar/3a00859ac02593b2343da25b615cb042/AndroidManifest.xml:2:1-9:12
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/8e6754bca7b0f1aa64b62702d5ff5ec9/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/3153cda1e0525d02d0aa8f1c6b525239/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.databinding:adapters:1.3.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/39b852420e2356721d601ed4062d6389/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.databinding:library:1.3.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/55890b25f7788cc2ad5249235c118ba4/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:support-v4:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/428e37c6b48409a162d5c0b1047bdd90/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/62f42444d9f6ef32e9499d28d89cc9fb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1393bba712fa3cfb2aa9495a7c2b8ff5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.paging:runtime:1.0.0-rc1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0-rc1.aar/d2947a207f8a53989968903746a68e79/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/47faec1bf34a6f21bc670d08275ee9d0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/5c970b500c05a3d42ee949d69683027a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/14e168d6c0a5eb73d51053d108e7000a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/5b9e1523c3ef19765dbb6e67b00b9cee/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/366ce1804baa364206403b025d0571ac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/546bba80f827c3811a6d713e0fe5e107/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/bdb31f58d660ceb9ae53f4b9c8627cae/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/ab0963305a61c85200edbce6e72e9416/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0-beta2.aar/d3ce024b5b5d87eaaee5cbed1cc95ea5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/371d0415006a98c6a1349ca30f91b2d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/d05568df0b7545a16c7ad7fd51298d39/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9ed427f64f78dee5e5267746955da944/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/264651edc171dd2f32189cd4287334af/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ce1e0dbddfd921435e02b791ff453999/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.0-beta2.aar/1e517e1f4dab0b68ab9a4da5f7a9b882/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/db-1.1.0-beta2.aar/fd7d14b87d05fcdd684f37893b90cbed/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:3:11-54
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:6:22-78
+uses-feature#android.hardware.location.gps
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:8:19-63
+application
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:10:5-25:19
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/timber-4.7.0.aar/3a00859ac02593b2343da25b615cb042/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/timber-4.7.0.aar/3a00859ac02593b2343da25b615cb042/AndroidManifest.xml:7:5-20
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/8e6754bca7b0f1aa64b62702d5ff5ec9/AndroidManifest.xml:11:5-20
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/8e6754bca7b0f1aa64b62702d5ff5ec9/AndroidManifest.xml:11:5-20
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:22:5-28:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/5b9e1523c3ef19765dbb6e67b00b9cee/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/5b9e1523c3ef19765dbb6e67b00b9cee/AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:12:9-36
+	android:theme
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:16:9-40
+	android:name
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:11:9-33
+activity#com.example.android.scheduler_app.ui.MainActivity
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:17:9-24:20
+	android:label
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:17:19-83
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:21:17-68
+	android:name
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:22:17-76
+	android:name
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml:22:27-74
+uses-sdk
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/timber-4.7.0.aar/3a00859ac02593b2343da25b615cb042/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/timber-4.7.0.aar/3a00859ac02593b2343da25b615cb042/AndroidManifest.xml:5:5-43
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/8e6754bca7b0f1aa64b62702d5ff5ec9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/8e6754bca7b0f1aa64b62702d5ff5ec9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/3153cda1e0525d02d0aa8f1c6b525239/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/3153cda1e0525d02d0aa8f1c6b525239/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.databinding:adapters:1.3.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/39b852420e2356721d601ed4062d6389/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:adapters:1.3.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/39b852420e2356721d601ed4062d6389/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/55890b25f7788cc2ad5249235c118ba4/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/55890b25f7788cc2ad5249235c118ba4/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/428e37c6b48409a162d5c0b1047bdd90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/428e37c6b48409a162d5c0b1047bdd90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/62f42444d9f6ef32e9499d28d89cc9fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/62f42444d9f6ef32e9499d28d89cc9fb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1393bba712fa3cfb2aa9495a7c2b8ff5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1393bba712fa3cfb2aa9495a7c2b8ff5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.paging:runtime:1.0.0-rc1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0-rc1.aar/d2947a207f8a53989968903746a68e79/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.paging:runtime:1.0.0-rc1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0-rc1.aar/d2947a207f8a53989968903746a68e79/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/47faec1bf34a6f21bc670d08275ee9d0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/47faec1bf34a6f21bc670d08275ee9d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/5c970b500c05a3d42ee949d69683027a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/5c970b500c05a3d42ee949d69683027a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/14e168d6c0a5eb73d51053d108e7000a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/14e168d6c0a5eb73d51053d108e7000a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/5b9e1523c3ef19765dbb6e67b00b9cee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/5b9e1523c3ef19765dbb6e67b00b9cee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/366ce1804baa364206403b025d0571ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/366ce1804baa364206403b025d0571ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/546bba80f827c3811a6d713e0fe5e107/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/546bba80f827c3811a6d713e0fe5e107/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/bdb31f58d660ceb9ae53f4b9c8627cae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/bdb31f58d660ceb9ae53f4b9c8627cae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/ab0963305a61c85200edbce6e72e9416/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/ab0963305a61c85200edbce6e72e9416/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0-beta2.aar/d3ce024b5b5d87eaaee5cbed1cc95ea5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0-beta2.aar/d3ce024b5b5d87eaaee5cbed1cc95ea5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/371d0415006a98c6a1349ca30f91b2d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/371d0415006a98c6a1349ca30f91b2d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/d05568df0b7545a16c7ad7fd51298d39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/d05568df0b7545a16c7ad7fd51298d39/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9ed427f64f78dee5e5267746955da944/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9ed427f64f78dee5e5267746955da944/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/264651edc171dd2f32189cd4287334af/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/264651edc171dd2f32189cd4287334af/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ce1e0dbddfd921435e02b791ff453999/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ce1e0dbddfd921435e02b791ff453999/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.0-beta2.aar/1e517e1f4dab0b68ab9a4da5f7a9b882/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.0-beta2.aar/1e517e1f4dab0b68ab9a4da5f7a9b882/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/db-1.1.0-beta2.aar/fd7d14b87d05fcdd684f37893b90cbed/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.0-beta2] /Users/eugene/.gradle/caches/transforms-1/files-1.1/db-1.1.0-beta2.aar/fd7d14b87d05fcdd684f37893b90cbed/AndroidManifest.xml:20:5-44
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+		ADDED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/AndroidManifest.xml
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/eugene/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a79055f4792c2e5dc6cbb70a625e982d/AndroidManifest.xml:24:13-83

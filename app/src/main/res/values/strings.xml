@@ -1,8 +1,42 @@
 <resources>
-    <string name="app_name">CourseWork3</string>
-    <string name="airports_layout_name">Airports</string>
-    <string name="random_text">kek/lol</string>
-    <string name="input_hint">type name of airalane company </string>
-    <string name="search">Search</string>
-    <string name="error_message">Fail to get resourcse, please try again</string>
+    <string name="app_name">Schedule app</string>
+    <string name="loading_airports">Loading airports...</string>
+    <string name="cd_airports_list">Airports list</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="search_item">Search</string>
+    <string name="my_flights_item">My Flights</string>
+    <string name="airports_item">Airports</string>
+    <string name="settings_item">Settings</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="the_flight_tracker">The Flight Tracker</string>
+    <string name="search">search</string>
+
+
+    <string name="passenger_label">PASSENGER</string>
+    <string name="passenger_name">MR. JAMES BOND</string>
+    <string name="origin_code">SFO</string>
+    <string name="destination_code">LAX</string>
+    <string name="flight_code">UDA 2465</string>
+    <string name="boarding_time_label">BOARDING TIME</string>
+    <string name="boarding_time">02:10 PM</string>
+    <string name="departure_time_label">DEPARTURE</string>
+    <string name="departure_time">02:40 PM</string>
+    <string name="arrival_time">12:40 AM</string>
+    <string name="arrival_time_label">ARRIVAL</string>
+    <string name="boarding_in_time">00:15</string>
+    <string name="boarding_in_label">BOARDING IN</string>
+    <string name="terminal_label">TERMINAL</string>
+    <string name="gate_label">GATE</string>
+    <string name="seat_label">SEAT</string>
+    <string name="terminal">2</string>
+    <string name="gate">58B</string>
+    <string name="seat">24A</string>
+    <string name="countDownFormat">%1$02d:%2$02d</string>
+    <string name="timeFormat">hh:mm a</string>
+    <string name="passanger_name">passanger</string>
+
+    <string name="name">Mr. Eugene</string>
 </resources>

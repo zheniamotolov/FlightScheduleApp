@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/airport_item.xml",
+        "source": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/res/layout/airport_item.xml"
+    },
+    {
+        "merged": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_fragment.xml",
+        "source": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/res/layout/list_fragment.xml"
+    },
+    {
+        "merged": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_main.xml",
+        "source": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/flight_info.xml",
+        "source": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/res/layout/flight_info.xml"
+    },
+    {
+        "merged": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_search.xml",
+        "source": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/res/layout/fragment_search.xml"
+    },
+    {
+        "merged": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/boarding_info.xml",
+        "source": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/src/main/res/layout/boarding_info.xml"
+    }
+]
