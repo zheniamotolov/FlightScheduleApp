@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/eugene/Documents/android-architecture-components/BasicSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
+            "outputFile": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
             "map": [
                 {
                     "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/res/values-sw/values-sw.xml",

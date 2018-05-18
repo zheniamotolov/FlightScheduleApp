@@ -1,4 +1,4 @@
-#Thu May 17 10:53:41 MSK 2018
-base.0=/Users/eugene/Documents/android-architecture-components/BasicSample/app/build/intermediates/transforms/dexMerger/debug/7
+#Fri May 18 16:21:41 MSK 2018
+base.0=/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/transforms/dexMerger/debug/7
 path.0=classes.dex
 renamed.0=classes.dex
