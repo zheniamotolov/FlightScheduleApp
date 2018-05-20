@@ -8,10 +8,14 @@ class DataBinderMapper  {
     }
     public android.databinding.ViewDataBinding getDataBinder(android.databinding.DataBindingComponent bindingComponent, android.view.View view, int layoutId) {
         switch(layoutId) {
+                case com.example.android.scheduler_app.R.layout.fragment_airport_schedule:
+                    return com.example.android.scheduler_app.databinding.FragmentAirportScheduleBinding.bind(view, bindingComponent);
                 case com.example.android.scheduler_app.R.layout.fragment_search:
                     return com.example.android.scheduler_app.databinding.FragmentSearchBinding.bind(view, bindingComponent);
                 case com.example.android.scheduler_app.R.layout.flight_info:
                     return com.example.android.scheduler_app.databinding.FlightInfoBinding.bind(view, bindingComponent);
+                case com.example.android.scheduler_app.R.layout.flight_status_item:
+                    return com.example.android.scheduler_app.databinding.FlightStatusItemBinding.bind(view, bindingComponent);
                 case com.example.android.scheduler_app.R.layout.content_main:
                     return com.example.android.scheduler_app.databinding.ContentMainBinding.bind(view, bindingComponent);
                 case com.example.android.scheduler_app.R.layout.airport_item:
@@ -32,6 +36,12 @@ class DataBinderMapper  {
         }
         final int code = tag.hashCode();
         switch(code) {
+            case -1302436506: {
+                if(tag.equals("layout/fragment_airport_schedule_0")) {
+                    return com.example.android.scheduler_app.R.layout.fragment_airport_schedule;
+                }
+                break;
+            }
             case -1648731965: {
                 if(tag.equals("layout/fragment_search_0")) {
                     return com.example.android.scheduler_app.R.layout.fragment_search;
@@ -41,6 +51,12 @@ class DataBinderMapper  {
             case 443532649: {
                 if(tag.equals("layout/flight_info_0")) {
                     return com.example.android.scheduler_app.R.layout.flight_info;
+                }
+                break;
+            }
+            case -1563218137: {
+                if(tag.equals("layout/flight_status_item_0")) {
+                    return com.example.android.scheduler_app.R.layout.flight_status_item;
                 }
                 break;
             }
@@ -75,7 +91,9 @@ class DataBinderMapper  {
         static String[] sKeys = new String[]{
             "_all"
             ,"airport"
+            ,"airportScheduleViewModel"
             ,"callback"
+            ,"flightStatus"
             ,"isLoading"};
     }
 }

@@ -27,7 +27,7 @@ public class AirportItemBinding extends android.databinding.ViewDataBinding impl
     @Nullable
     private com.example.android.scheduler_app.db.entity.Airport mAirport;
     @Nullable
-    private final android.view.View.OnClickListener mCallback1;
+    private final android.view.View.OnClickListener mCallback2;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -41,7 +41,7 @@ public class AirportItemBinding extends android.databinding.ViewDataBinding impl
         this.name.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback1 = new android.databinding.generated.callback.OnClickListener(this, 1);
+        mCallback2 = new android.databinding.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -134,7 +134,7 @@ public class AirportItemBinding extends android.databinding.ViewDataBinding impl
         if ((dirtyFlags & 0x4L) != 0) {
             // api target 1
 
-            this.mboundView0.setOnClickListener(mCallback1);
+            this.mboundView0.setOnClickListener(mCallback2);
         }
         if ((dirtyFlags & 0x6L) != 0) {
             // api target 1

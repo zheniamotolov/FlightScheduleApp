@@ -4,7 +4,7 @@
             "outputFile": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/14e168d6c0a5eb73d51053d108e7000a/res/values-v23/values-v23.xml",
+                    "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/4a582a1d770c5df382befd369ec07b74/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

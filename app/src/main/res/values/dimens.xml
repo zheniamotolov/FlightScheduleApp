@@ -2,5 +2,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="item_horizontal_margin">8dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-
+    <dimen name="flight_horizontal_margin">16dp</dimen>
+    <dimen name="flight_padding">8dp</dimen>
+    <dimen name="flight_minHeight">64dp</dimen>
 </resources>

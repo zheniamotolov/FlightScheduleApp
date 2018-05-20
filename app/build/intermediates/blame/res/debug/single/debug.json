@@ -49,7 +49,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable_design_bottom_navigation_item_background.xml.flat",
@@ -77,7 +77,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -169,7 +169,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/color_abc_tint_switch_track.xml.flat",
@@ -245,7 +245,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_notification_action.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout/notification_action.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_navigation_close_inverted.png.flat",
@@ -381,7 +381,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility.png.flat",
@@ -473,7 +473,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout-v21/notification_template_icon_group.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout-v21/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -486,6 +486,10 @@
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_flight_status_item.xml.flat",
+        "source": "/Users/eugene/Documents/FlightScheduleApp/app/src/main/res/layout/flight_status_item.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
@@ -505,7 +509,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-v21/notification_action_background.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-v21/notification_action_background.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -522,6 +526,10 @@
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_fragment_airport_schedule.xml.flat",
+        "source": "/Users/eugene/Documents/FlightScheduleApp/app/src/main/res/layout/fragment_airport_schedule.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
@@ -617,7 +625,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout-v16/notification_template_custom_big.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout-v16/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_design_navigation_item.xml.flat",
@@ -645,7 +653,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout-v21/notification_action.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout-v21/notification_action.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -669,7 +677,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
@@ -749,7 +757,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout/notification_action_tombstone.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat",
@@ -849,7 +857,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
@@ -872,12 +880,12 @@
         "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
         "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/ab0963305a61c85200edbce6e72e9416/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/9c63e36e9f30c1fdfea071314f6ee195/res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -897,7 +905,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_voice_search_inverted.png.flat",
@@ -965,7 +973,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout-v21/notification_template_custom_big.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout-v21/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -1005,7 +1013,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable/notification_bg_low.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable/notification_bg_low.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -1041,7 +1049,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout-v21/notification_action_tombstone.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout-v21/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
@@ -1181,7 +1189,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable/notification_bg.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/color_abc_tint_spinner.xml.flat",
@@ -1221,7 +1229,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -1309,7 +1317,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1561,7 +1569,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_notification_template_icon_group.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout/notification_template_icon_group.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1577,7 +1585,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable_abc_ic_go_search_api_material.xml.flat",
@@ -1593,7 +1601,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -1621,7 +1629,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable/notification_icon_background.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable/notification_icon_background.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1681,11 +1689,11 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -1737,7 +1745,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/layout/notification_template_part_time.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -1753,7 +1761,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable/notification_tile_bg.xml"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility_off.png.flat",
@@ -1801,7 +1809,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-mdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1889,7 +1897,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2009,7 +2017,7 @@
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e0c4dd9eec2326e30c4683d0be4895c4/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/eugene/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/a88bba64b6a82bf6dc28b7cb813b08de/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",

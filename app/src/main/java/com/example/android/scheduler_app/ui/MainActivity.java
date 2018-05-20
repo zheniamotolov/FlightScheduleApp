@@ -6,15 +6,12 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 
 
 import com.example.android.scheduler_app.R;
-import com.example.android.scheduler_app.api.AirportSearchResponse;
-import com.example.android.scheduler_app.api.ApiUtill;
-import com.example.android.scheduler_app.api.FlightStatsService;
 import com.example.android.scheduler_app.db.entity.Airport;
+import com.example.android.scheduler_app.menuitems.AirportScheduleFragment;
 import com.example.android.scheduler_app.menuitems.AirportsFragment;
 import com.example.android.scheduler_app.menuitems.HomeFragment;
 import com.example.android.scheduler_app.menuitems.SearchFragment;
@@ -27,7 +24,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
-
 
 
     @Override
@@ -52,20 +48,21 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     }
 
-    /**
+    /**`
      * Shows the airport schedule  fragment
      */
-//    public void show(Airport airport) {
-//
-//        SearchFragment searchFragment = ProductFragment.forProduct(airport.getFs());
-//
-//        getSupportFragmentManager()
-//                .beginTransaction()
-//                .addToBackStack("product")
-//                .replace(R.id.fragment_container,
-//                        productFragment, null).commit();
-//    }
+    public void showAirportSchedule(Airport airport) {
 
+        AirportScheduleFragment airportScheduleFragment = AirportScheduleFragment.forAirport(airport.getFs());
+//        SearchFragment searchFragment = ProductFragment.forProduct(airport.getFs());
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .addToBackStack("airport_schedule")
+                .replace(R.id.fragment_container,
+                        airportScheduleFragment, null)
+                .commit();
+    }
 
 
     private boolean loadFragment(Fragment fragment) {

@@ -1,5 +1,6 @@
 package com.example.android.scheduler_app.menuitems;
 
+import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.databinding.DataBindingUtil;
@@ -25,7 +26,8 @@ import com.example.android.scheduler_app.db.entity.Airport;
 import com.example.android.scheduler_app.ui.AirportAdapter;
 import com.example.android.scheduler_app.ui.AirportClickCallback;
 
-import com.example.android.scheduler_app.viewmodel.AirportViewModel;
+import com.example.android.scheduler_app.ui.MainActivity;
+import com.example.android.scheduler_app.viewmodel.AirportsListViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +43,7 @@ public class SearchFragment extends Fragment {
 
     public static final String TAG = "myLogs";
     private AirportAdapter mAirportAdapter;
-    private AirportViewModel viewModel;
+    private AirportsListViewModel viewModel;
     private FragmentSearchBinding mBinding;
     private List<Airport> cachedAirports;
 
@@ -65,12 +67,12 @@ public class SearchFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        viewModel = ViewModelProviders.of(this).get(AirportViewModel.class);
+        viewModel = ViewModelProviders.of(this).get(AirportsListViewModel.class);
         fetchData();
         subscribeUi(viewModel);
     }
 
-    private void subscribeUi(AirportViewModel viewModel) {
+    private void subscribeUi(AirportsListViewModel viewModel) {
         // Update the list when the data changes
         viewModel.getAirports().observe(this, new Observer<List<Airport>>() {
             @Override
@@ -92,9 +94,9 @@ public class SearchFragment extends Fragment {
         @Override
         public void onClick(Airport airport) {
 
-//            if (getLifecycle().getCurrentState().isAtLeast(Lifecycle.State.STARTED)) {
-//                ((MainActivity) getActivity()).show(airport);
-//            }
+            if (getLifecycle().getCurrentState().isAtLeast(Lifecycle.State.STARTED)) {
+                ((MainActivity) getActivity()).showAirportSchedule(airport);
+            }
         }
     };
 

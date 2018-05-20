@@ -12,11 +12,19 @@
         "source": "/Users/eugene/Documents/FlightScheduleApp/app/src/main/res/layout/boarding_info.xml"
     },
     {
+        "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_airport_schedule.xml",
+        "source": "/Users/eugene/Documents/FlightScheduleApp/app/src/main/res/layout/fragment_airport_schedule.xml"
+    },
+    {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/flight_info.xml",
         "source": "/Users/eugene/Documents/FlightScheduleApp/app/src/main/res/layout/flight_info.xml"
     },
     {
         "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/airport_item.xml",
         "source": "/Users/eugene/Documents/FlightScheduleApp/app/src/main/res/layout/airport_item.xml"
+    },
+    {
+        "merged": "/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/flight_status_item.xml",
+        "source": "/Users/eugene/Documents/FlightScheduleApp/app/src/main/res/layout/flight_status_item.xml"
     }
 ]

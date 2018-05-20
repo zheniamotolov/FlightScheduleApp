@@ -71,6 +71,7 @@ public class AirportAdapter extends RecyclerView.Adapter<AirportAdapter.AirportV
     }
     @Override
     public AirportViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
         AirportItemBinding binding = DataBindingUtil
                 .inflate(LayoutInflater.from(parent.getContext()), R.layout.airport_item,
                         parent, false);
