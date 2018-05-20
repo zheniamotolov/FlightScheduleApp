@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.example.android.scheduler_app.db.entity.Airport;
 
+import java.io.IOException;
 import java.util.List;
 
 import retrofit2.Call;
@@ -20,7 +21,7 @@ public class ApiUtill {
 
 
     private static FlightStatsService flightStatsService;
-    private static List<Airport> airportList;
+        private static List<Airport> airportList;
 
     public static FlightStatsService getFlightStatsService() {
         return RetrofitClient.getClient(ALL_AIRPORTS_SEARCH_URL).create(FlightStatsService.class);
@@ -28,13 +29,23 @@ public class ApiUtill {
 
     public static List<Airport> flightStatsAirportsLoad() {
         flightStatsService = ApiUtill.getFlightStatsService();
+//        Call<AirportSearchResponse> call = flightStatsService.getAirports();
+//        Response<AirportSearchResponse> response = null;
+//        try {
+//            response = call.execute();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return response.body().getAirports();
+
+
+
         flightStatsService.getAirports(/*AIRPORT_STATE, APP_ID, APP_KEY*/).enqueue(new Callback<AirportSearchResponse>() {
             @Override
             public void onResponse(Call<AirportSearchResponse> call, Response<AirportSearchResponse> response) {
-
                 if (response.isSuccessful()) {
                     Log.d("FlightStatsApi", "posts loaded from API");
-                    airportList = response.body().getItems();
+                    airportList = response.body().getAirports();
                 } else {
                     int statusCode = response.code();
                     Log.d("FlightStatsApi", "error code " + statusCode);

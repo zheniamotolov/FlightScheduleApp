@@ -21,7 +21,7 @@ public class BasicApp extends Application {
     }
 
     public FlightStatsDatabase getDatabase() {
-        return FlightStatsDatabase.getDatabase(this, mAppExecutors);
+        return FlightStatsDatabase.getDatabase(this,mAppExecutors);
     }
 
     public AirportRepository getRepository() {

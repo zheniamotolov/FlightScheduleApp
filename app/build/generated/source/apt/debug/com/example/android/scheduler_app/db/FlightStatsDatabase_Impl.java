@@ -32,9 +32,9 @@ public class FlightStatsDatabase_Impl extends FlightStatsDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `airport` (`fs` TEXT NOT NULL, `faa` TEXT, `name` TEXT, `city` TEXT, `stateCode` TEXT, `countryCode` TEXT, `countryName` TEXT, `regionName` TEXT, `timeZoneRegionName` TEXT, `localTime` TEXT, `utcOffsetHours` INTEGER, `latitude` REAL, `longitude` REAL, `elevationFeet` INTEGER, `classification` INTEGER, `active` INTEGER, `weatherUrl` TEXT, `delayIndexUrl` TEXT, PRIMARY KEY(`fs`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `airport` (`fs` TEXT NOT NULL, `iata` TEXT, `icao` TEXT, `faa` TEXT, `name` TEXT, `street1` TEXT, `street2` TEXT, `city` TEXT, `cityCode` TEXT, `stateCode` TEXT, `postalCode` TEXT, `countryCode` TEXT, `district` TEXT, `countryName` TEXT, `regionName` TEXT, `timeZoneRegionName` TEXT, `weatherZone` TEXT, `localTime` TEXT, `utcOffsetHours` REAL NOT NULL, `latitude` REAL NOT NULL, `longitude` REAL NOT NULL, `elevationFeet` INTEGER NOT NULL, `classification` INTEGER NOT NULL, `active` INTEGER NOT NULL, `dateFrom` TEXT, `dateTo` TEXT, `weatherUrl` TEXT, `delayIndexUrl` TEXT, PRIMARY KEY(`fs`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"7174553d8679384c358530ea049b2570\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"50610577e451a7b06c6522d917340638\")");
       }
 
       @Override
@@ -64,23 +64,33 @@ public class FlightStatsDatabase_Impl extends FlightStatsDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsAirport = new HashMap<String, TableInfo.Column>(18);
+        final HashMap<String, TableInfo.Column> _columnsAirport = new HashMap<String, TableInfo.Column>(28);
         _columnsAirport.put("fs", new TableInfo.Column("fs", "TEXT", true, 1));
+        _columnsAirport.put("iata", new TableInfo.Column("iata", "TEXT", false, 0));
+        _columnsAirport.put("icao", new TableInfo.Column("icao", "TEXT", false, 0));
         _columnsAirport.put("faa", new TableInfo.Column("faa", "TEXT", false, 0));
         _columnsAirport.put("name", new TableInfo.Column("name", "TEXT", false, 0));
+        _columnsAirport.put("street1", new TableInfo.Column("street1", "TEXT", false, 0));
+        _columnsAirport.put("street2", new TableInfo.Column("street2", "TEXT", false, 0));
         _columnsAirport.put("city", new TableInfo.Column("city", "TEXT", false, 0));
+        _columnsAirport.put("cityCode", new TableInfo.Column("cityCode", "TEXT", false, 0));
         _columnsAirport.put("stateCode", new TableInfo.Column("stateCode", "TEXT", false, 0));
+        _columnsAirport.put("postalCode", new TableInfo.Column("postalCode", "TEXT", false, 0));
         _columnsAirport.put("countryCode", new TableInfo.Column("countryCode", "TEXT", false, 0));
+        _columnsAirport.put("district", new TableInfo.Column("district", "TEXT", false, 0));
         _columnsAirport.put("countryName", new TableInfo.Column("countryName", "TEXT", false, 0));
         _columnsAirport.put("regionName", new TableInfo.Column("regionName", "TEXT", false, 0));
         _columnsAirport.put("timeZoneRegionName", new TableInfo.Column("timeZoneRegionName", "TEXT", false, 0));
+        _columnsAirport.put("weatherZone", new TableInfo.Column("weatherZone", "TEXT", false, 0));
         _columnsAirport.put("localTime", new TableInfo.Column("localTime", "TEXT", false, 0));
-        _columnsAirport.put("utcOffsetHours", new TableInfo.Column("utcOffsetHours", "INTEGER", false, 0));
-        _columnsAirport.put("latitude", new TableInfo.Column("latitude", "REAL", false, 0));
-        _columnsAirport.put("longitude", new TableInfo.Column("longitude", "REAL", false, 0));
-        _columnsAirport.put("elevationFeet", new TableInfo.Column("elevationFeet", "INTEGER", false, 0));
-        _columnsAirport.put("classification", new TableInfo.Column("classification", "INTEGER", false, 0));
-        _columnsAirport.put("active", new TableInfo.Column("active", "INTEGER", false, 0));
+        _columnsAirport.put("utcOffsetHours", new TableInfo.Column("utcOffsetHours", "REAL", true, 0));
+        _columnsAirport.put("latitude", new TableInfo.Column("latitude", "REAL", true, 0));
+        _columnsAirport.put("longitude", new TableInfo.Column("longitude", "REAL", true, 0));
+        _columnsAirport.put("elevationFeet", new TableInfo.Column("elevationFeet", "INTEGER", true, 0));
+        _columnsAirport.put("classification", new TableInfo.Column("classification", "INTEGER", true, 0));
+        _columnsAirport.put("active", new TableInfo.Column("active", "INTEGER", true, 0));
+        _columnsAirport.put("dateFrom", new TableInfo.Column("dateFrom", "TEXT", false, 0));
+        _columnsAirport.put("dateTo", new TableInfo.Column("dateTo", "TEXT", false, 0));
         _columnsAirport.put("weatherUrl", new TableInfo.Column("weatherUrl", "TEXT", false, 0));
         _columnsAirport.put("delayIndexUrl", new TableInfo.Column("delayIndexUrl", "TEXT", false, 0));
         final HashSet<TableInfo.ForeignKey> _foreignKeysAirport = new HashSet<TableInfo.ForeignKey>(0);
@@ -93,7 +103,7 @@ public class FlightStatsDatabase_Impl extends FlightStatsDatabase {
                   + " Found:\n" + _existingAirport);
         }
       }
-    }, "7174553d8679384c358530ea049b2570", "58d7798a628880aa6e0c4c0d21701770");
+    }, "50610577e451a7b06c6522d917340638", "59697833bbd46c1c778cc3c9d2a6348f");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

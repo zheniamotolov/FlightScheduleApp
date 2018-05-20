@@ -2,9 +2,11 @@ package com.example.android.scheduler_app.db.repository;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MediatorLiveData;
+import android.os.AsyncTask;
 
 
 import com.example.android.scheduler_app.db.FlightStatsDatabase;
+import com.example.android.scheduler_app.db.dao.AirportDao;
 import com.example.android.scheduler_app.db.entity.Airport;
 
 import java.util.List;
@@ -20,19 +22,20 @@ public class AirportRepository {
 //
 
     private static AirportRepository sInstance;
-
+    private AirportDao airportDao;
     private final FlightStatsDatabase mDatabase;
-    private MediatorLiveData<List<Airport>> mObservableAirportsts;
+    private LiveData<List<Airport>> mObservableAirportsts;
 
-    AirportRepository(final FlightStatsDatabase flightStatsDatabase) {
+    public AirportRepository(final FlightStatsDatabase flightStatsDatabase) {
+         airportDao = flightStatsDatabase.airportDao();
         mDatabase = flightStatsDatabase;
-        mObservableAirportsts = new MediatorLiveData<>();
-        mObservableAirportsts.addSource(mDatabase.airportDao().getAllAirportsItems(),
-                airports -> {
-                    if (mDatabase.getDatabaseCreated().getValue() != null) {
-                        mObservableAirportsts.postValue(airports);
-                    }
-                });
+        mObservableAirportsts = airportDao.getAllAirportsItems();
+//        mObservableAirportsts.addSource(mDatabase.airportDao().getAllAirportsItems(),
+//                airports -> {
+//                    if (mDatabase.getDatabaseCreated().getValue() != null) {
+//                        mObservableAirportsts.postValue(airports);
+//                    }
+//                });
 
     }
 
@@ -46,6 +49,26 @@ public class AirportRepository {
         }
         return sInstance;
     }
+
+    public void insert(List<Airport> airports) {
+        new insertAsyncTask(airportDao).execute(airports);
+    }
+
+    private static class insertAsyncTask extends AsyncTask<List<Airport>, Void, Void> {
+
+        private AirportDao mAsyncTaskDao;
+
+        insertAsyncTask(AirportDao dao) {
+            mAsyncTaskDao = dao;
+        }
+
+        @Override
+        protected Void doInBackground(final List<Airport>... params) {
+            mAsyncTaskDao.insertAirports(params[0]);
+            return null;
+        }
+    }
+
 
     /**
      * Get the list of airports from the database and get notified when the data changes.

@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,6 +17,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.scheduler_app.R;
+import com.example.android.scheduler_app.api.AirportSearchResponse;
+import com.example.android.scheduler_app.api.ApiUtill;
+import com.example.android.scheduler_app.api.FlightStatsService;
 import com.example.android.scheduler_app.databinding.FragmentSearchBinding;
 import com.example.android.scheduler_app.db.entity.Airport;
 import com.example.android.scheduler_app.ui.AirportAdapter;
@@ -25,6 +29,10 @@ import com.example.android.scheduler_app.viewmodel.AirportViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class SearchFragment extends Fragment {
@@ -41,8 +49,6 @@ public class SearchFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         setHasOptionsMenu(true);
         super.onCreate(savedInstanceState);
-
-
     }
 
     @Nullable
@@ -52,7 +58,6 @@ public class SearchFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_search, container, false);
         mAirportAdapter = new AirportAdapter(mAirportClickCallback);
-
         mBinding.airportsList.setAdapter(mAirportAdapter);
         return mBinding.getRoot();
     }
@@ -60,8 +65,8 @@ public class SearchFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        viewModel =
-                ViewModelProviders.of(this).get(AirportViewModel.class);
+        viewModel = ViewModelProviders.of(this).get(AirportViewModel.class);
+        fetchData();
         subscribeUi(viewModel);
     }
 
@@ -96,7 +101,6 @@ public class SearchFragment extends Fragment {
     private List<Airport> filter(List<Airport> productEntities, String query) {
         final List<Airport> filteredModeList = new ArrayList<>();
         for (Airport item : productEntities) {
-
             if (item.getName().toLowerCase().startsWith(query.toLowerCase())) {
                 filteredModeList.add(item);
             }
@@ -105,6 +109,30 @@ public class SearchFragment extends Fragment {
         return filteredModeList;
     }
 
+
+    private  void fetchData(){
+        FlightStatsService flightStatsService = ApiUtill.getFlightStatsService();
+        flightStatsService.getAirports(/*AIRPORT_STATE, APP_ID, APP_KEY*/).enqueue(new Callback<AirportSearchResponse>() {
+            @Override
+            public void onResponse(Call<AirportSearchResponse> call, Response<AirportSearchResponse> response) {
+                if (response.isSuccessful()) {
+                    Log.d("FlightStatsApi", "posts loaded from API");
+                    cachedAirports = response.body().getAirports();
+                    viewModel.insert(cachedAirports);
+                } else {
+                    int statusCode = response.code();
+                    Log.d("FlightStatsApi", "error code " + statusCode);
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<AirportSearchResponse> call, Throwable t) {
+                Log.d("FlightStatsApi", "error loading from API");
+
+            }
+        });
+    }
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
