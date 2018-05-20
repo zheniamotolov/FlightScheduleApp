@@ -13,14 +13,6 @@ import java.util.List;
 
 
 public class AirportRepository {
-
-    //    private LiveData<List<Airport>> mAllAirportsItems;
-//    private final AirportDao airportDao;
-//    private final FlightStatsDatabase db;
-//    private final FlightStatsService flightStatsService;
-////    private final AppExecutors appExecutors;
-//
-
     private static AirportRepository sInstance;
     private AirportDao airportDao;
     private final FlightStatsDatabase mDatabase;
@@ -30,13 +22,6 @@ public class AirportRepository {
          airportDao = flightStatsDatabase.airportDao();
         mDatabase = flightStatsDatabase;
         mObservableAirportsts = airportDao.getAllAirportsItems();
-//        mObservableAirportsts.addSource(mDatabase.airportDao().getAllAirportsItems(),
-//                airports -> {
-//                    if (mDatabase.getDatabaseCreated().getValue() != null) {
-//                        mObservableAirportsts.postValue(airports);
-//                    }
-//                });
-
     }
 
     public static AirportRepository getInstance(final FlightStatsDatabase database) {

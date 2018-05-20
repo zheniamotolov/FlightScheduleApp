@@ -29,7 +29,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class AirportScheduleFragment extends Fragment {
-
     private static final String AIRPORT_FS = "c";
     private FragmentAirportScheduleBinding mBinding;
     private static FlightStatsService flightStatsService;
@@ -46,14 +45,12 @@ public class AirportScheduleFragment extends Fragment {
         mFlightStatusAdapter = new FlightStatusAdapter(mFlightStatusClickCallback);
         mBinding.flightList.setAdapter(mFlightStatusAdapter);
         return mBinding.getRoot();
-//        return inflater.inflate(R.layout.fragment_airport_schedule, container, false);
 
     }
         private final FlightStatusClickCallback mFlightStatusClickCallback = new FlightStatusClickCallback() {
         @Override
         public void onClick(FlightStatus flightStatus) {
-            // no-op
-
+            // soon
         }
     };
     @Override
@@ -72,43 +69,25 @@ public class AirportScheduleFragment extends Fragment {
 
     private void subscribeToModel(final AirportScheduleViewModel model) {
 
-
+        String fs=model.getmAirportFs();
         loadAirportInfo(model);
-        loadAirportFlights(model.getmAirportFs());
-
-        // Observe comments
-//        model.getComments().observe(this, new Observer<List<CommentEntity>>() {
-//            @Override
-//            public void onChanged(@Nullable List<CommentEntity> commentEntities) {
-//                if (commentEntities != null) {
-//                    mBinding.setIsLoading(false);
-//                    mCommentAdapter.setCommentList(commentEntities);
-//                } else {
-//                    mBinding.setIsLoading(true);
-//                }
-//            }
-//        });
+        if(fs!=null) {
+            loadAirportFlights(model.getmAirportFs());
+        }
     }
 
     private void loadAirportFlights(String airportFs) {
-
         flightStatsService = ApiUtill.getFlightStatsService();
-
         flightStatsService.getFlightStatuses(airportFs).enqueue(new Callback<FlightStatusList>() {
             @Override
             public void onResponse(Call<FlightStatusList> call, Response<FlightStatusList> response) {
                 if (response.isSuccessful()) {
                     Log.d("FlightStatsApi", "flights status loaded from API");
                     mBinding.setIsLoading(false);
-//                    mFlightStatusAdapter.updateAnswers(response.body().getFlightStatuses());
                     mFlightStatusAdapter.setFlightStatusList(response.body().getFlightStatuses());
-
-//                    mAirportList.setFlightStatuses(airportList);
                 } else {
                     int statusCode = response.code();
-                    Log.d("FlightStatsApi", "error code is " + response.errorBody());
-
-
+                    Log.d("FlightStatsApi", "error boddy is " + response.errorBody());
                 }
             }
 

@@ -24,8 +24,6 @@ public class AirportScheduleViewModel extends AndroidViewModel {
 
     private final String mAirportFs;
 
-//    private final LiveData<List<AirportSchedule>> mObservableAirportSchedule;
-
     public AirportScheduleViewModel(@NonNull Application application,
                                     AirportRepository airportRepository,
                                     final String airportFs) {

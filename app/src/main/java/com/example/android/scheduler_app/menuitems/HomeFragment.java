@@ -14,9 +14,6 @@ import com.example.android.scheduler_app.R;
 
 public class HomeFragment extends Fragment {
     public static final String TAG = "HomeViewModel";
-
-
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

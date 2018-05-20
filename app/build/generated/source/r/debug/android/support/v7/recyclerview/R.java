@@ -107,21 +107,21 @@ public final class R {
         public static final int left = 0x7f080062;
         public static final int line1 = 0x7f080063;
         public static final int line3 = 0x7f080064;
-        public static final int none = 0x7f080078;
-        public static final int normal = 0x7f080079;
-        public static final int notification_background = 0x7f08007a;
-        public static final int notification_main_column = 0x7f08007b;
-        public static final int notification_main_column_container = 0x7f08007c;
-        public static final int right = 0x7f080089;
-        public static final int right_icon = 0x7f08008a;
-        public static final int right_side = 0x7f08008b;
-        public static final int start = 0x7f0800b3;
-        public static final int tag_transition_group = 0x7f0800bb;
-        public static final int text = 0x7f0800bc;
-        public static final int text2 = 0x7f0800bd;
-        public static final int time = 0x7f0800cc;
-        public static final int title = 0x7f0800cd;
-        public static final int top = 0x7f0800d0;
+        public static final int none = 0x7f080077;
+        public static final int normal = 0x7f080078;
+        public static final int notification_background = 0x7f080079;
+        public static final int notification_main_column = 0x7f08007a;
+        public static final int notification_main_column_container = 0x7f08007b;
+        public static final int right = 0x7f080088;
+        public static final int right_icon = 0x7f080089;
+        public static final int right_side = 0x7f08008a;
+        public static final int start = 0x7f0800b2;
+        public static final int tag_transition_group = 0x7f0800ba;
+        public static final int text = 0x7f0800bb;
+        public static final int text2 = 0x7f0800bc;
+        public static final int time = 0x7f0800cb;
+        public static final int title = 0x7f0800cc;
+        public static final int top = 0x7f0800cf;
     }
     public static final class integer {
         public static final int status_bar_notification_info_maxnum = 0x7f090009;

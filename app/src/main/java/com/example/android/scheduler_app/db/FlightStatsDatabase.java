@@ -43,95 +43,14 @@ public abstract class FlightStatsDatabase extends RoomDatabase {
 
     public static FlightStatsDatabase getDatabase(final Context context, final AppExecutors executors) {
         if (INSTANCE == null) {
-//            List<Airport> airports = ApiUtill.flightStatsAirportsLoad();
             synchronized (FlightStatsDatabase.class) {
                 if (INSTANCE == null) {
-//                    INSTANCE = buildDatabase(context.getApplicationContext(), executors);
-
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             FlightStatsDatabase.class, DATABASE_NAME)
                             .build();
-//                    INSTANCE.updateDatabaseCreated(context.getApplicationContext());
                 }
             }
         }
         return INSTANCE;
     }
-
-
-    private static FlightStatsDatabase buildDatabase(final Context appContext,
-                                                     final AppExecutors executors) {
-        return Room.databaseBuilder(appContext, FlightStatsDatabase.class, DATABASE_NAME)
-                .addCallback(new Callback() {
-                    @Override
-                    public void onCreate(@NonNull SupportSQLiteDatabase db) {
-                        super.onCreate(db);
-                        executors.diskIO().execute(() -> {
-                            FlightStatsDatabase database = FlightStatsDatabase.getDatabase(appContext, executors);
-//                            insertData(database, null);
-                            executors.networkIO().execute(() -> {
-                                flightStatsAirportsLoad(database);
-                            });
-
-                            // notify that the database was created and it's ready to be used
-                            database.setDatabaseCreated();
-
-                        });
-                    }
-
-                }).build();
-    }
-
-    private void updateDatabaseCreated(final Context context) {
-        if (context.getDatabasePath(DATABASE_NAME).exists()) {
-            setDatabaseCreated();
-        }
-    }
-
-    public static void flightStatsAirportsLoad(FlightStatsDatabase database) {
-//        flightStatsService = ApiUtill.getFlightStatsService();
-//        Call<AirportSearchResponse> call = flightStatsService.getAirports();
-//        Response<AirportSearchResponse> response = null;
-//        try {
-//            response = call.execute();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        insertData(database, response.body().getAirports());
-//        return response.body().getAirports();
-        flightStatsService.getAirports(/*AIRPORT_STATE, APP_ID, APP_KEY*/).enqueue(new retrofit2.Callback<AirportSearchResponse>() {
-            @Override
-            public void onResponse(Call<AirportSearchResponse> call, Response<AirportSearchResponse> response) {
-                if (response.isSuccessful()) {
-                    Log.d("FlightStatsApi", "posts loaded from API");
-                    insertData(database, response.body().getAirports());
-                } else {
-                    int statusCode = response.code();
-                    Log.d("FlightStatsApi", "error code " + statusCode);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<AirportSearchResponse> call, Throwable t) {
-                Log.d("FlightStatsApi", "error loading from API");
-            }
-        });
-    }
-
-    private void setDatabaseCreated() {
-        mIsDatabaseCreated.postValue(true);
-    }
-
-    private static void insertData(final FlightStatsDatabase database, final List<Airport> airports
-            /*final List<CommentEntity> comments*/) {
-        database.runInTransaction(() -> {
-            database.airportDao().insertAirports(airports);
-//            database.commentDao().insertAll(comments);
-        });
-    }
-
-    public LiveData<Boolean> getDatabaseCreated() {
-        return mIsDatabaseCreated;
-    }
-
 }

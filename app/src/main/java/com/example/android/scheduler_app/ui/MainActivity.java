@@ -30,18 +30,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
-
-
-//        List<Airport> airports = ApiUtill.flightStatsAirportsLoad();
-
         if (savedInstanceState == null) {
             HomeFragment fragment = new HomeFragment();
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragment_container, fragment, HomeFragment.TAG).commit();
         }
-
-
-//        loadFragment(new HomeFragment());
         BottomNavigationView navigation = findViewById(R.id.bottom_menu);
         navigation.setOnNavigationItemSelectedListener(this);
 
@@ -52,10 +45,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
      * Shows the airport schedule  fragment
      */
     public void showAirportSchedule(Airport airport) {
-
         AirportScheduleFragment airportScheduleFragment = AirportScheduleFragment.forAirport(airport.getFs());
-//        SearchFragment searchFragment = ProductFragment.forProduct(airport.getFs());
-
         getSupportFragmentManager()
                 .beginTransaction()
                 .addToBackStack("airport_schedule")

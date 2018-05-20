@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun May 20 19:53:09 MSK 2018
+#Sun May 20 20:38:56 MSK 2018
 2.base=/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/transforms/dexMerger/debug/12
 5.set=DEX
 0.path=classes.dex

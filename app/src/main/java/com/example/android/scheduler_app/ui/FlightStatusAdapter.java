@@ -44,8 +44,8 @@ public class FlightStatusAdapter extends RecyclerView.Adapter<FlightStatusAdapte
                 @Override
                 public boolean areItemsTheSame(int oldItemPosition, int newItemPosition) {
                     FlightStatus old = mflightStatusesList.get(oldItemPosition);
-                    FlightStatus comment = flightStatuses.get(newItemPosition);
-                    return old.getFlightId() == comment.getFlightId();
+                    FlightStatus newer = flightStatuses.get(newItemPosition);
+                    return old.getFlightId() == newer.getFlightId();
                 }
 
                 @Override

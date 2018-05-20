@@ -27,7 +27,7 @@ public class FragmentAirportScheduleBinding extends android.databinding.ViewData
     @NonNull
     public final android.widget.FrameLayout flightListWrapper;
     @NonNull
-    public final android.widget.TextView loadingCommentsTv;
+    public final android.widget.TextView loadingTv;
     @Nullable
     private final com.example.android.scheduler_app.databinding.AirportItemBinding mboundView0;
     @NonNull
@@ -47,8 +47,8 @@ public class FragmentAirportScheduleBinding extends android.databinding.ViewData
         this.flightList = (android.support.v7.widget.RecyclerView) bindings[2];
         this.flightList.setTag(null);
         this.flightListWrapper = (android.widget.FrameLayout) bindings[4];
-        this.loadingCommentsTv = (android.widget.TextView) bindings[1];
-        this.loadingCommentsTv.setTag(null);
+        this.loadingTv = (android.widget.TextView) bindings[1];
+        this.loadingTv.setTag(null);
         this.mboundView0 = (com.example.android.scheduler_app.databinding.AirportItemBinding) bindings[3];
         setContainedBinding(this.mboundView0);
         this.mboundView01 = (android.widget.LinearLayout) bindings[0];
@@ -178,7 +178,7 @@ public class FragmentAirportScheduleBinding extends android.databinding.ViewData
             // api target 1
 
             com.example.android.scheduler_app.ui.BindingAdapters.showHide(this.flightList, IsLoading1);
-            com.example.android.scheduler_app.ui.BindingAdapters.showHide(this.loadingCommentsTv, isLoading);
+            com.example.android.scheduler_app.ui.BindingAdapters.showHide(this.loadingTv, isLoading);
         }
         if ((dirtyFlags & 0xdL) != 0) {
             // api target 1

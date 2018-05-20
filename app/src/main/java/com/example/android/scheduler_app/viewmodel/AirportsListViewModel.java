@@ -24,14 +24,11 @@ public class AirportsListViewModel extends AndroidViewModel {
         super(application);
         airportRepository = ((BasicApp) application).getRepository();
         mObservableAirports = new MediatorLiveData<>();
-        // set by default null, until we get data from the database.
         mObservableAirports.setValue(null);
 
-        LiveData<List<Airport>> products = airportRepository
+        LiveData<List<Airport>> airports = airportRepository
                 .getAirports();
-
-        // observe the changes of the products from the database and forward them
-        mObservableAirports.addSource(products, mObservableAirports::setValue);
+        mObservableAirports.addSource(airports, mObservableAirports::setValue);
 
     }
 

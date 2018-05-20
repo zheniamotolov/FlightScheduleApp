@@ -29,12 +29,6 @@ public interface AirportDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertAirport(Airport airport);
-//
-//    @Query("SELECT * FROM AirportSearchResult WHERE query = :query")
-//    public abstract LiveData<AirportSearchResult> search(String query);
-//
-//    @Insert(onConflict = OnConflictStrategy.REPLACE)
-//    public abstract void insert(AirportSearchResult result);
 
     @Delete
     void delete(Airport airport);

@@ -100,9 +100,9 @@ public class SearchFragment extends Fragment {
         }
     };
 
-    private List<Airport> filter(List<Airport> productEntities, String query) {
+    private List<Airport> filter(List<Airport> airportEntites, String query) {
         final List<Airport> filteredModeList = new ArrayList<>();
-        for (Airport item : productEntities) {
+        for (Airport item : airportEntites) {
             if (item.getName().toLowerCase().startsWith(query.toLowerCase())) {
                 filteredModeList.add(item);
             }
@@ -114,7 +114,7 @@ public class SearchFragment extends Fragment {
 
     private  void fetchData(){
         FlightStatsService flightStatsService = ApiUtill.getFlightStatsService();
-        flightStatsService.getAirports(/*AIRPORT_STATE, APP_ID, APP_KEY*/).enqueue(new Callback<AirportSearchResponse>() {
+        flightStatsService.getAirports().enqueue(new Callback<AirportSearchResponse>() {
             @Override
             public void onResponse(Call<AirportSearchResponse> call, Response<AirportSearchResponse> response) {
                 if (response.isSuccessful()) {
@@ -158,7 +158,6 @@ public class SearchFragment extends Fragment {
                 return true;
             }
         });
-//        binding.searchView.setMenuItem(menu.findItem(R.id.action_search));
     }
 
 

@@ -1,4 +1,4 @@
-#Sun May 20 19:35:35 MSK 2018
+#Sun May 20 20:38:56 MSK 2018
 base.0=/Users/eugene/Documents/FlightScheduleApp/app/build/intermediates/transforms/dexMerger/debug/7
 path.0=classes.dex
 renamed.0=classes.dex
